@@ -6,7 +6,7 @@ import os
 class QuestionGenerator:
     def __init__(self):
         # Initialize the Gemini API with your key
-        self.API_KEY = os.getenv('GEMINI_API_KEY', "AIzaSyCQSiEPCrsW_RrcDKq1sVCorUigIf2gcx4")
+        self.API_KEY = os.getenv('GEMINI_API_KEY', "API_KEY")
         genai.configure(api_key=self.API_KEY)
         self.model = genai.GenerativeModel("gemini-pro")
 
